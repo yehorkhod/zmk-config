@@ -26,15 +26,13 @@ combo_##NAME { \
     combos {
         compatible = "zmk,combos";
         COMBO(q, &kp Q, 0 1)
-        COMBO(dqt, &kp DQT, 1 2)
-        COMBO(esc, &kp ESC, 8 9)
+        COMBO(esc, &kp ESC, 1 2)
         COMBO(z, &kp Z, 18 19)
         COMBO(b, &kp B, 19 20)
 
-        COMBO(excl, &kp EXCL, 6 7)
-        COMBO(sqt, &kp SQT, 5 6)
-        COMBO(tab, &kp TAB, 16 17)
-        COMBO(qmark, &kp QMARK, 22 23)
+        COMBO(sdq, &sdq, 6 7)
+        COMBO(tab, &kp TAB, 5 6)
+        COMBO(quex, &quex, 22 23)
         COMBO(k, &kp K, 21 22)
     };
 };
@@ -63,6 +61,20 @@ combo_##NAME { \
             label = "COM_SEM";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        quex: question_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QMARK_EXCL";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK>, <&kp EXCL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        sdq: single_double_quotes {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SQT_DQT";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
