@@ -1,7 +1,3 @@
-// q" '!
-// esc tab
-// zb k?
-// zilpzalp key numbers
 //     __________________________  __________________________
 //    /     0  |  1  |  2  |  3  \/   4 |   5 |   6 |   7    \
 // |  8  |  9  | 10  | 11  | 12  /\  13 |  14 |  15 |  16 | 17  |
@@ -21,10 +17,10 @@
         middlemak_nh {
             label = "BASE";
             bindings = <
-                      &kp W &kp L      &kp D       &kp G          &kp J       &kp F      &kp O      &kp U
-                &kp N &kp S &ht LALT R &ht LGUI T  &ht LCTRL P    &ht RCTRL Y &ht RGUI H &ht RALT E &kp I   &kp A
-                      &kp X &kp C      &kp V                                  &kp M      &comsem    &dotcol
-                                     &kp LSHFT &my_lt L1 SPACE    &my_lt L2 ENTER &kp BKSP
+                      &kp W &kp L      &kp D       &kp G  &kp J &kp F       &kp O      &kp U
+                &kp N &kp S &ht LALT R &ht LGUI T  &kp P  &kp Y &ht RGUI H  &ht RALT E &kp I   &kp A
+                      &kp X &kp C      &ht LCTRL V              &ht RCTRL M &comsem    &dotcol
+                      &kp LSHFT        &lt L1 SPACE             &lt L2 ENTER           &kp BKSP
             >;
         };
         layer1 {
@@ -39,10 +35,10 @@
         layer2 {
             label = "L2";
             bindings = <
-                       &none    &none    &none     &none        &none    &none    &none    &none
-                &kp LT &kp LBRC &kp LBKT &kp LPAR  &kp CARET    &kp DLLR &kp RPAR &kp RBKT &kp RBRC &kp GT
-                       &none    &none    &kp HASH                        &kp STAR &none    &none
-                                &none              &none        &none             &none
+                       &none    &kp C_BRI_DEC &kp C_VOL_DN &none       &none    &kp C_VOL_UP &kp C_BRI_INC &none
+                &kp LT &kp LBRC &kp LBKT      &kp LPAR     &kp CARET   &kp DLLR &kp RPAR     &kp RBKT      &kp RBRC &kp GT
+                       &none    &none         &kp HASH                          &kp STAR     &none         &none
+                                &none                      &none       &none                 &none
             >;
         };
     };

@@ -1,14 +1,14 @@
 include:
   # TOTEM
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: totem_left
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: totem_right
   # Ferris Sweep
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: cradio_left
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: cradio_right
   # ZilpZalp
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: zilpzalp_ble
